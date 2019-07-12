@@ -1,6 +1,6 @@
 # Inspector Nova Link
 
-Install our Laravel Nova tool to add a direct link to the Inspector dashboard in you Nova administration panel.
+Install our Laravel Nova tool to add a direct link to the Inspector dashboard in your Nova administration panel.
 
 ![](https://app.inspector.dev/images/docs/inspector-nova-link-screen.png)
 
