@@ -31,7 +31,7 @@ public function tools()
 {
     return [
         ...,
-        new \Inspector\Nova\InspectorLink,
+        new \Inspector\Nova\InspectorNovaLink,
     ];
 }
 ```
