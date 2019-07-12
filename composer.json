@@ -1,0 +1,30 @@
+{
+    "name": "inspector-apm/inspector-nova-link",
+    "description": "Direct link to the Inspector dashboard in your Laravel Nova installation.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "inspector"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inspector\\Nova\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Inspector\\Nova\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
