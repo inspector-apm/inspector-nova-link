@@ -14,7 +14,7 @@ class InspectorNovaLink extends Tool
      */
     public function boot()
     {
-        Nova::script('inspector-nova-link', __DIR__.'/../dist/js/tool.js');
+        //Nova::script('inspector-nova-link', __DIR__.'/../dist/js/tool.js');
         //Nova::style('inspector-nova-link', __DIR__.'/../dist/css/tool.css');
     }
 

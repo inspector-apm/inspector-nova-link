@@ -9,4 +9,7 @@ docs/_build
 docs/*.pyc
 .idea
 .DS_STORE
-node_modules/
+/build
+/node_modules
+package-lock.json
+mix-manifest.json
