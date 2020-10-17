@@ -8,16 +8,16 @@ Direct link to the Inspector dashboard in your Laravel Nova administration panel
 
 Install the latest version using composer:
 
-```sehll
+```
 composer require inspector-apm/inspector-nova-link
 ```
 
 ## Configure the API Key
 
-Put the Inspector API key in your environment file:
+Put the Inspector Ingestion Key in your environment file if you haven’t already:
 
-```bash
-INSPECTOR_API_KEY=[api key]
+```
+INSPECTOR_INGESTION_KEY=[ingestion key]
 ```
 
 You can obtain `INSPECTOR_API_KEY` creating a new project in your [Inspector](https://www.inspector.dev) dashboard.
