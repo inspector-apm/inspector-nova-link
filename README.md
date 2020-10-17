@@ -12,7 +12,7 @@ Install the latest version using composer:
 composer require inspector-apm/inspector-nova-link
 ```
 
-## Configure the API Key
+## Configure the Ingestion Key
 
 Put the Inspector Ingestion Key in your environment file if you haven’t already:
 
