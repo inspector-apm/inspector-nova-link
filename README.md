@@ -17,10 +17,10 @@ composer require inspector-apm/inspector-nova-link
 Put the Inspector API key in your environment file:
 
 ```bash
-INSPECTOR_API_KEY=[api key]
+INSPECTOR_INGESTION_KEY=[api key]
 ```
 
-You can obtain `INSPECTOR_API_KEY` creating a new project in your [Inspector](https://www.inspector.dev) dashboard.
+You can obtain `INSPECTOR_INGESTION_KEY` creating a new project in your [Inspector](https://www.inspector.dev) dashboard.
 
 ## Register the tool
 
@@ -38,4 +38,4 @@ public function tools()
 
 ## LICENSE
 
-This package are licensed under the [MIT](LICENSE) license.
+This package is licensed under the [MIT](LICENSE) license.
