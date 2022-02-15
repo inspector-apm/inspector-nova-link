@@ -17,7 +17,7 @@ composer require inspector-apm/inspector-nova-link
 Put the Inspector Ingestion Key in your environment file if you haven’t already:
 
 ```bash
-INSPECTOR_API_KEY=[api key]
+INSPECTOR_INGESTION_KEY=xxxxxxxxxxxxxxxxxxxxxx
 ```
 
 You can obtain `INSPECTOR_INGESTION_KEY` creating a new project in your [Inspector](https://www.inspector.dev) dashboard.
