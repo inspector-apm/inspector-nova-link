@@ -2,7 +2,8 @@
 
 namespace Inspector\Nova;
 
-use Laravel\Nova\Nova;
+use Illuminate\Http\Request;
+use Laravel\Nova\Menu\MenuSection;
 use Laravel\Nova\Tool;
 
 class InspectorNovaLink extends Tool
@@ -14,8 +15,8 @@ class InspectorNovaLink extends Tool
      */
     public function boot()
     {
-        //Nova::script('inspector-nova-link', __DIR__.'/../dist/js/tool.js');
-        //Nova::style('inspector-nova-link', __DIR__.'/../dist/css/tool.css');
+        //Nova::script('cloud-service-links', __DIR__.'/../dist/js/tool.js');
+        //Nova::style('cloud-service-links', __DIR__.'/../dist/css/tool.css');
     }
 
     /**
@@ -23,8 +24,10 @@ class InspectorNovaLink extends Tool
      *
      * @return \Illuminate\View\View
      */
-    public function renderNavigation()
+    public function menu(Request $request)
     {
-        return view('inspector-nova-link::navigation');
+        return MenuSection::make('Inspector')
+            ->externalLink('https://app.inspector.dev/project-lookup/'.config('inspector.key'))
+            ->icon('desktop-computer');
     }
 }
