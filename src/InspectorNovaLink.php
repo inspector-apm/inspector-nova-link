@@ -3,6 +3,7 @@
 namespace Inspector\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Menu\MenuItem;
 use Laravel\Nova\Menu\MenuSection;
 use Laravel\Nova\Tool;
 
@@ -26,8 +27,8 @@ class InspectorNovaLink extends Tool
      */
     public function menu(Request $request)
     {
-        return MenuSection::make('Inspector')
-            ->externalLink('https://app.inspector.dev/project-lookup/'.config('inspector.key'))
-            ->icon('desktop-computer');
+        return MenuSection::make('Inspector', [
+            MenuItem::externalLink('Dashboard', 'https://app.inspector.dev/project-lookup/'.config('inspector.key'))->openInNewTab(),
+        ])->icon('desktop-computer');
     }
 }
