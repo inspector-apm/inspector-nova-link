@@ -17,7 +17,7 @@ class ToolServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'inspector-nova-link');
+        //$this->loadViewsFrom(__DIR__.'/../resources/views', 'inspector-nova-link');
 
         $this->app->booted(function () {
             $this->routes();
